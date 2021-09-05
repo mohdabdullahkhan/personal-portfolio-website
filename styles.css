@@ -1,0 +1,504 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    overflow: hidden;
+}
+
+h1{
+    font-size: 20px;
+    font-family:'Kaisei HarunoUmi', serif;
+}
+
+span{
+    font-family:'Kaisei HarunoUmi', serif;
+}
+
+/* section 1 nav bar */
+header{
+    width:100%;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 90px;
+    overflow-y: hidden;
+    position: fixed;
+
+}
+
+.logo h1{
+    font-size: 20px;
+    color: #4169e1;
+}
+
+
+
+.navigation ul{
+    display: flex;
+}
+
+.navigation ul li{
+    list-style: none;
+    margin-right: 24px;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #242d52;
+    padding:16px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 900;
+    
+}
+
+nav ul li a:hover{
+    opacity: 0.6;
+}
+
+.sticky{
+    background-color: #fff;
+    border-bottom: 1px solid #4169e1;
+}
+
+.navigation.abdullah {
+    left: 0;
+}
+
+.hamburger{
+    display: none;
+}
+
+.line {
+    width: 40px;
+    height:7px;
+    background: #4169e1;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width:900px){
+    header{
+        padding:0 70px;
+        position: unset;
+    }
+    .navigation{
+        position: absolute;
+        top:60px;
+        left:-100%;
+        width:100%;
+        height:55%;
+        background-color: #4169e1;
+    }
+.navigation ul{
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.navigation ul li{
+    width:100%;
+    text-align: center;
+}
+.navigation ul li a {
+    font-size: 29px;
+    display: block;
+    color: #fff;
+}
+.logo h1{
+    margin-top: 10px;
+}
+
+.hamburger{
+    display: block;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+}
+/* 
+section 1ends here */
+
+
+/* section 2 main header content starts here */
+
+.main-header{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 150px;
+    margin-top: 150px;
+    grid-gap: 150px;
+}
+
+.header_main_content_h1{
+    font-size: 25px;
+    color: #242d52;
+}
+
+.header_main_content_h1 span{
+    color: #4169e1;
+    
+}
+
+
+.header-content button,
+form button{
+    padding: 12px 35px;
+    background-color: #4169e1;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border-radius: 100px;
+    
+}
+
+ .cta {
+     margin-top: 20px;
+ }
+
+ .cta:hover{
+     opacity: 0.6;
+ }
+
+ .logo_socials{
+     display: flex;
+     flex-direction: column;
+ }
+
+ .logo_socials_soc {
+     margin-top: 90px;
+ }
+ .logo_socials_soc svg{
+     margin-left: 8px;
+     margin-right: 8px;
+     cursor: pointer;
+
+ }
+
+ .logo_socials_soc svg:hover path{
+     fill:#242d52;
+ }
+
+ 
+
+ 
+
+ @media only screen and (max-width:900px) {
+     .main-header{
+         grid-template-columns: 1fr;
+         margin-left: auto;
+         margin-top: 90px;
+         grid-gap: 60px;
+         text-align: center;
+  }
+
+     .header_main_content_h1{
+         font-size: 43px;
+     }
+
+     .logo_socials_soc{
+         margin-top: 60px;
+     }
+
+ }
+
+ /* section 2 main header ends here */
+
+
+ /* about section starts here */
+
+ .about-section{
+     margin-top: 150px;
+ }
+
+ .about-heading{
+     text-align: center;
+ }
+
+ .about-heading h1{
+     color: #4169e1;
+     font-size: 53px;
+ }
+
+ .about{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     justify-content: center;
+     align-items: center;
+     margin-left: 150px;
+     margin-right: 150px;
+     margin-top: 60px;
+ }
+
+ .about img{
+     border-radius: 10px;
+ }
+
+ .about h1{
+     font-size: 30px;
+     font-weight: 900;
+     color: #4169e1;
+ }
+
+ .about p{
+     font-size: 21px;
+     color: #a9a9a9;
+ }
+
+ @media only screen and (max-width:900px){
+     .about{
+         grid-template-columns: 1fr;
+         grid-gap:20px;
+         text-align: center;
+         margin-left: auto;
+         margin-right: auto;
+         margin-top: 60px;
+     }
+
+     .about h1{
+         font-size: 43px;
+     }
+     .about p{
+         font-size: 16px;
+     }
+ }
+
+ /* about section ends here */
+
+ /* skills section starts here */
+ .skill-section{
+     margin-top: 150px;
+ }
+
+ .skill-section-heading {
+     text-align: center;
+     color: #4169e1;
+     
+ }
+
+ .skill-section-heading h1{
+     font-size: 53px;
+ }
+
+
+
+ .skills{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     grid-gap:150px;
+     margin-left: 100px;
+     margin-top: 60px;
+ }
+
+ .skills-content img{
+     padding-bottom: 20px;
+ }
+ .skills-img img{
+     margin-top: 40px;
+ }
+
+ @media only screen and (max-width:900px){
+     .skills{
+         grid-template-columns: 1fr;
+         grid-gap:40px;
+         margin-left: auto;
+         text-align: center;
+     }
+ }
+ /* skills section ends here */
+
+
+ /* work section starts here */
+ .work-section{
+     margin-top: 150px;
+     overflow: hidden;
+     width: 100%;
+     height: 100%;
+ }
+
+ .work{
+     display: grid;
+     grid-template-columns: repeat(3,300px);
+     grid-gap:40px;
+     align-items: center;
+     justify-content: center;
+     margin-top: 60px;
+     text-align: center;
+ }
+
+ .work-section-heading{
+     text-align: center;
+     color: #4169e1;
+ }
+
+ .work-section-heading h1{
+     font-size: 53px;
+ }
+
+ .work img{
+     width: 180px;
+     border-radius: 10px;
+     cursor: pointer;
+ }
+
+ .work img:hover{
+     opacity: 0.6;
+
+ }
+
+ .work a {
+     display: block;
+     font-weight: 1000;
+     color: #4169e1;
+     
+ }
+
+ @media only screen and (max-width:900px){
+     .work{
+         
+         grid-template-columns: repeat(1,350px);
+         
+     }
+     .work img{
+        align-items: center;
+        justify-content: center;
+        margin: 30px 50px;
+        width: 250px;
+     }
+ }
+ /* work section ends here */
+
+ /* contact section starts here */
+ .contact-heading {
+     text-align: center;
+     color: #4169e1;
+     margin-top: 150px;
+     margin-bottom: 50px;
+ }
+
+ .contact-heading h1{
+     font-size: 53px;
+ }
+
+ .container{
+     background-color: #4169e1;
+     width: 400px;
+     margin: 80px auto;
+     margin-bottom: 140px;
+     border-radius: 20px;
+ }
+
+ form{
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: auto;
+     grid-gap: 10px;
+     padding: 70px 30px 70px 30px;
+ }
+
+ .form-field {
+     display: flex;
+     flex-direction: column;
+ }
+
+ input[type="text"],
+ input[type="email"]{
+     height:40px;
+     font-size: 16px;
+     padding-left: 5px;
+     outline: none;
+     border: none;
+     border-radius: 5px;
+ }
+
+ label{
+     font-size: 23px;
+     margin-bottom: 5px;
+     color: #fff;
+ }
+
+ textarea{
+     resize: none;
+     font-size: 16px;
+     padding: 6px 5px;
+     outline: none;
+     border: none;
+     border-radius: 5px;
+ }
+
+ .btn{
+     display: flex;
+     align-items: center;
+ }
+
+ input[type="submit"] {
+     padding: 10px 50px;
+     font-size: 16px;
+     outline: none;
+     border: none;
+     border-radius: 5px;
+     margin-top: 40px;
+     background-color: #fff;
+     color: #4169e1;
+     cursor: pointer;
+ }
+
+ .btn:hover{
+     opacity: 0.6;
+ }
+
+ @media (max-width: 415px){
+     .container{
+         width: 350px;
+         margin: 50px auto 90px auto;
+     }
+ }
+ /* contact ends here */
+
+ /* footer section starts here */
+
+ footer{
+     background-color: #4169e1;
+     display: flex;
+     padding: 50px 0;
+     align-items: center;
+     justify-content: space-evenly;
+     color: #fff;
+
+ }
+
+ .logo-socials{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+
+ }
+
+ .logo-socials-soc{
+     margin-top: 30px;
+ }
+
+ .logo-socials-soc svg{
+     margin-left: 5px;
+     margin-right: 5px;
+     cursor: pointer;
+ }
+
+
+ .logo-socials-soc svg:hover path {
+     fill: #242d52;
+ }
+
+ /* footer section ends here */
