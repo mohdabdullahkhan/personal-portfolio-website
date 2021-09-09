@@ -252,7 +252,7 @@ form button{
  }
 
  .about p{
-     font-size: 21px;
+     font-size: 35px;
      color: #a9a9a9;
  }
 
@@ -329,7 +329,7 @@ form button{
 
  .work{
      display: grid;
-     grid-template-columns: repeat(3,300px);
+     grid-template-columns: repeat(3,350px);
      grid-gap:40px;
      align-items: center;
      justify-content: center;
@@ -347,7 +347,7 @@ form button{
  }
 
  .work img{
-     width: 180px;
+     width: 350px;
      border-radius: 10px;
      cursor: pointer;
  }
