@@ -145,6 +145,10 @@ section 1ends here */
     color: #242d52;
 }
 
+.header-content{
+    margin-top: 50px;
+}
+
 .header_main_content_h1 span{
     color: #4169e1;
     
@@ -298,7 +302,7 @@ form button{
      grid-template-columns: repeat(2,1fr);
      grid-gap:150px;
      margin-left: 100px;
-     margin-top: 60px;
+     margin-top: 80px;
  }
 
  .skills-content img{
